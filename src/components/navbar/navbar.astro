@@ -6,7 +6,7 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "Promociones",
     path: "#",
     children: [
       { title: "Action", path: "/" },
@@ -16,11 +16,11 @@ const menuitems = [
     ],
   },
   {
-    title: "Pricing",
-    path: "/pricing",
+    title: "Plataformas",
+    path: "/platforms",
   },
   {
-    title: "About",
+    title: "Acerca",
     path: "/about",
   },
   {
@@ -28,7 +28,7 @@ const menuitems = [
     path: "/blog",
   },
   {
-    title: "Contact",
+    title: "Contactanos",
     path: "/contact",
   },
 ];
@@ -38,11 +38,13 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
+
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
-          >
-        </a>
+        ><span class="font-bold text-slate-800">Inkas</span><span
+          class="text-yellow-500">club</span
+        >
+      </a>
+      
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
@@ -81,8 +83,8 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="https://projectinkas.vercel.app/oauth/login">Log in</a>
+        <Link href="https://projectinkas.vercel.app/oauth/register" size="md">Sign up</Link>
       </div>
     </div>
   </header>
